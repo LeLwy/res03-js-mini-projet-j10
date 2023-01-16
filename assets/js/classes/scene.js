@@ -1,4 +1,4 @@
-class Choice{
+class Scene{
     
     #id;
     #illustration;
@@ -45,7 +45,12 @@ class Choice{
         this.#options = options;
     }
     
-    displayChoice(){
+    getOptions(){
+        
+        
+    }
+    
+    displayScene(){
         
     }
     
@@ -62,27 +67,29 @@ class Choice{
     }
 }
 
-class choiceTest{
+class SceneTest{
     
-    #choice;
+    #scene;
     
     constructor(){
         
-        this.#choice = null;
+        this.#scene = null;
     }
     
     test(){
         
-        let choiceId;
-        let choiceIllustration;
-        let choiceSituation;
-        let choiceOptions;
+        let sceneId;
+        let sceneIdIllustration;
+        let sceneIllustrationSituation;
+        let sceneOptions;
         
-        this.#choice = new Choice(choiceId, choiceIllustration, choiceSituation, choiceOptions);
+        this.#scene = new Scene(sceneId, sceneIllustration, sceneSituation, sceneOptions);
         
-        console.log(this.#choice.choiceId);
-        console.log(this.#choice.choiceIllustration);
-        console.log(this.#choice.choiceSituation);
-        console.log(this.#choice.choiceOptions);
+        console.log(this.#scene.sceneId);
+        console.log(this.#scene.sceneIllustration);
+        console.log(this.#scene.sceneSituation);
+        console.log(this.#scene.sceneOptions);
     }
 }
+
+export { Scene };
