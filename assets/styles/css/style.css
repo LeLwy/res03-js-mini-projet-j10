@@ -67,42 +67,74 @@ table {
     grid-template-rows: 15vh 80vh 5vh;
   }
   body > header {
-    background-color: #538d22;
-    color: #143601;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 43%, rgb(13, 232, 19) 46%, rgb(255, 255, 255) 50%, rgb(8, 238, 8) 53%, rgb(0, 0, 0) 56%);
+    color: white;
     text-align: center;
     text-transform: uppercase;
     grid-row: 1/2;
     display: flex;
-    align-items: center;
     justify-content: center;
     font-family: "Orbitron", sans-serif;
-    color: #aad576;
     font-size: 1.6rem;
     font-weight: bold;
+    padding-top: 2vh;
   }
   body > main {
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 30vw 40vw 30vw;
+    grid-template-columns: 30vw 30vw 40vw;
+    grid-column-gap: 3vw;
+    padding: 3vw;
+    background: url("https://cdnb.artstation.com/p/assets/images/images/012/137/523/large/tome-stefanovski-screenshot00003.jpg?1533220887");
+    background-size: cover;
   }
   body > main #scene-name {
     grid-column: 1/2;
-    background-color: #aad576;
+    background-color: #010c1b;
     font-size: 2rem;
     font-family: "Orbitron", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #538d22;
+    color: #83f386;
     font-weight: bolder;
+    border-radius: 10px;
+    border: solid 1px #83f386;
   }
   body > main #situation {
     grid-column: 2/3;
-    background-color: #143601;
-    font-family: "Montserrat", sans-serif;
-    display: flex;
+    background-color: #010c1b;
+    font-family: "Roboto Mono", monospace;
+    display: grid;
     align-items: center;
+    font-size: 1.5rem;
+    flex-direction: column;
+    border-radius: 10px;
+    border: solid 1px #83f386;
+    color: #83f386;
+    text-align: center;
+  }
+  body > main #img {
+    grid-column: 3/4;
+    background-color: #010c1b;
+    color: #83f386;
+    border: solid 1px #83f386;
+    border-radius: 10px;
+  }
+  body > footer {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 43%, rgb(13, 232, 19) 46%, rgb(255, 255, 255) 50%, rgb(8, 238, 8) 53%, rgb(0, 0, 0) 56%);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    grid-row: 3/4;
+    display: flex;
     justify-content: center;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-top: 2vh;
   }
 }
 
