@@ -25,6 +25,16 @@ class Game{
         this.#character = character;
     }
     
+    init(){
+        
+        let main = document.querySelector("body > main");
+        let newform = document.createElement("form");
+    }
+    
+    start(){
+        
+    }
+    
     redirect(choice){
         
     }
@@ -33,3 +43,5 @@ class Game{
         
     }
 }
+
+export { Game }
