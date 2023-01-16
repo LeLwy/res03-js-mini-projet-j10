@@ -1,0 +1,6 @@
+class Choice{
+    
+    #room;
+    #situation;
+    #
+}
