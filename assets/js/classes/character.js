@@ -33,3 +33,5 @@ class CharacterTest{
         console.log(this.#character.name);
     }
 }
+
+export { Character };

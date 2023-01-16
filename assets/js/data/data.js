@@ -1,5 +1,27 @@
-
 let data = [
+    
+    {
+        id : 0,
+        illustration : "",
+        situation : "",
+        options : [
+            {
+                id : 0,
+                text: "",
+                destination : {1} // ou null si c'est une fin
+            },
+            {
+                id : 1,
+                text: "",
+                destination : {2} // ou null si c'est une fin
+            },
+            {
+                id : 2,
+                text: "",
+                destination : {3} // ou null si c'est une fin
+            },
+        ]
+    },
     
     {
         id : 1,
@@ -7,10 +29,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -23,10 +47,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -39,10 +65,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -55,10 +83,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -71,10 +101,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -87,10 +119,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -103,10 +137,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -119,10 +155,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -135,10 +173,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -151,10 +191,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -167,10 +209,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -183,10 +227,12 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
@@ -199,29 +245,17 @@ let data = [
         situation : "",
         options : [
             {
+                id : 0,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
             {
-                text: "",
-                destination : {} // ou null si c'est une fin
-            },
-        ]
-    },
-    
-    {
-        id : 14,
-        illustration : "",
-        situation : "",
-        options : [
-            {
-                text: "",
-                destination : {} // ou null si c'est une fin
-            },
-            {
+                id : 1,
                 text: "",
                 destination : {} // ou null si c'est une fin
             },
         ]
     },
 ]
+
+export { data };

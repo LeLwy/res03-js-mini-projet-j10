@@ -1,3 +1,5 @@
+import { data } from './../data/data.js';
+
 class Game{
     
     #character;
@@ -27,8 +29,7 @@ class Game{
     
     init(){
         
-        let main = document.querySelector("body > main");
-        let newform = document.createElement("form");
+        
     }
     
     start(){
