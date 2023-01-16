@@ -1,22 +1,32 @@
 class Choice{
     
-    #scene;
+    #id;
+    #illustration;
     #situation;
     #options;
     
-    constructor(scene, situation, options){
+    constructor(id){
         
-        this.#scene = scene;
+        this.#id = id
+        this.#illustration = illustration;
         this.#situation = situation;
-        this.options = [];
+        this.#options = [];
     }
     
-    get scene (){
-        return this.#scene;
+    get id (){
+        return this.#id;
     }
 
-    set scene (scene){
-        this.#scene = scene;
+    set id (id){
+        this.#id = id;
+    }
+    
+    get illustration (){
+        return this.#illustration;
+    }
+
+    set illustration (illustration){
+        this.#illustration = illustration;
     }
     
     get situation (){
@@ -35,7 +45,11 @@ class Choice{
         this.#options = options;
     }
     
-    displayScene(){
+    displayChoice(){
+        
+    }
+    
+    displayIllustration(){
         
     }
     
@@ -59,13 +73,15 @@ class choiceTest{
     
     test(){
         
-        let choiceScene;
+        let choiceId;
+        let choiceIllustration;
         let choiceSituation;
         let choiceOptions;
         
-        this.#choice = new Choice(choiceScene, choiceSituation, choiceOptions);
+        this.#choice = new Choice(choiceId, choiceIllustration, choiceSituation, choiceOptions);
         
-        console.log(this.#choice.choiceScene);
+        console.log(this.#choice.choiceId);
+        console.log(this.#choice.choiceIllustration);
         console.log(this.#choice.choiceSituation);
         console.log(this.#choice.choiceOptions);
     }

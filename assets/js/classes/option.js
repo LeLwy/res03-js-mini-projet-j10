@@ -1,12 +1,22 @@
 class Option{
     
+    #id;
     #text;
     #destination;
     
-    constructor(text, destination){
+    constructor(id, text, destination){
         
+        this.id = id;
         this.#text = text;
         this.#destination = destination;
+    }
+    
+    get id (){
+        return this.#id;
+    }
+
+    set id (id){
+        this.#id = id;
     }
     
     get text (){
@@ -24,6 +34,4 @@ class Option{
     set destination (destination){
         this.#destination = destination;
     }
-    
-    
 }
