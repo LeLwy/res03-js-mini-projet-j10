@@ -25,6 +25,10 @@ class Game{
         this.#character = character;
     }
     
+    init(){
+        
+    }
+    
     redirect(choice){
         
     }
