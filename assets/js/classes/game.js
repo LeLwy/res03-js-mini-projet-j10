@@ -1,4 +1,5 @@
 import { data } from './../data/data.js';
+import { Scene } from './scene.js';
 
 class Game{
     
@@ -29,7 +30,10 @@ class Game{
     
     init(){
         
-        
+        for(let i=0; i<data.length; i++){
+            
+            let newScene = new Scene;
+        }
     }
     
     start(){
