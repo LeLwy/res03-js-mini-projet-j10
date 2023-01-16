@@ -1,3 +1,109 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.sr-only {
+  display: none;
+}
+
+@media (min-width: 1224px) {
+  /* Styles pour cette Media Queries */
+  body {
+    display: grid;
+    grid-template-rows: 15vh 80vh 5vh;
+  }
+  body > header {
+    background-color: #538d22;
+    color: #143601;
+    text-align: center;
+    text-transform: uppercase;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Orbitron", sans-serif;
+    color: #aad576;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  body > main {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 30vw 40vw 30vw;
+  }
+  body > main #scene-name {
+    grid-column: 1/2;
+    background-color: #aad576;
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #538d22;
+    font-weight: bolder;
+  }
+  body > main #situation {
+    grid-column: 2/3;
+    background-color: #143601;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

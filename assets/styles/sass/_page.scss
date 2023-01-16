@@ -1,0 +1,53 @@
+@media(min-width : 1224px){
+/* Styles pour cette Media Queries */
+
+body {
+    display:grid;
+    grid-template-rows : 15vh 80vh 5vh;
+
+    & > header {
+        background-color: $green;
+        color:$darkerGreen;
+        text-align:center;
+        text-transform:uppercase;
+        grid-row:1/2;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-family: $titleFont;
+        color: $lightGreen;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    & > main {
+        grid-row: 2/3;
+        display:grid;
+        grid-template-columns: 30vw 40vw 30vw;
+
+        #scene-name {
+            grid-column: 1/2;
+            background-color: $lightGreen;
+            font-size:2rem;
+            font-family: $titleFont;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color: $green;
+            font-weight:bolder;
+        }
+
+        #situation {
+            grid-column: 2/3;
+            background-color: $darkerGreen;
+            font-family: $textFont;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+
+
+    }
+}
+}
+
