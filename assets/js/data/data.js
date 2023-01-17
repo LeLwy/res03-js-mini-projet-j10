@@ -2,23 +2,24 @@ let data = [
     
     {
         id : 0,
-        illustration : "",
-        situation : "",
+        name: "Scène 1",
+        illustration : "un truc",
+        situation : "blablabla",
         options : [
             {
                 id : 0,
-                text: "",
-                destination : {1} // ou null si c'est une fin
+                text: "dfsghjk",
+                destination : {} // ou null si c'est une fin
             },
             {
                 id : 1,
-                text: "",
-                destination : {2} // ou null si c'est une fin
+                text: "fdxgbn",
+                destination : {} // ou null si c'est une fin
             },
             {
                 id : 2,
-                text: "",
-                destination : {3} // ou null si c'est une fin
+                text: "sdfwgxcvb",
+                destination : {} // ou null si c'est une fin
             },
         ]
     },
