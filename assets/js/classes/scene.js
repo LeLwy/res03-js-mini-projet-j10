@@ -115,9 +115,8 @@ class Scene{
     displayIllustration(){
         
         let sceneIllustrationImg = document.querySelector("#img > figure > img");
-        let illustrationSrc = document.createTextNode(this.#illustration);
-        console.log(illustrationSrc);
-        sceneIllustrationImg.setAttribute("src", illustrationSrc);
+        sceneIllustrationImg.setAttribute("src", this.#illustration);
+        console.log(sceneIllustrationImg)
         
     }
     

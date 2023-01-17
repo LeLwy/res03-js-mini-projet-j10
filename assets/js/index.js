@@ -7,4 +7,13 @@ window.addEventListener("DOMContentLoaded", function(){
     
     mySession.init();
     
+    let form = document.getElementById("choices");
+    
+    form.addEventListener("submit", function(e){
+        
+        e.preventDefault();
+        
+        mySession.redirection();
+        
+    });
 });

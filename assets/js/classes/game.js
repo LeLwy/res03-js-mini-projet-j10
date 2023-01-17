@@ -40,27 +40,20 @@ class Game{
         startScene.options = data[0].options;
        
         startScene.displayScene();
-        
-        this.redirection();
 
     }
     
     redirection(){
         
-        let sceneSubBtn = document.getElementById("subBtn");
-        
-        sceneSubBtn.addEventListener("click", function(e){
-            
-            e.preventDefault();
-            
-            let radioInputs = document.querySelectorAll("#choices > fieldset > input");
-            let inputValue; 
+        let radioInputs = document.querySelectorAll("#choices > fieldset > input");
+        let inputValue; 
             
             for(let i=0; i<radioInputs.length; i++){
                 
                 if(radioInputs[i].checked){
                     
-                    inputValue = radioInputs[i].getAttribute("destination");
+                    inputValue = parseInt(radioInputs[i].getAttribute("destination"));
+                    console.log(inputValue);
                 }
             }
             
@@ -68,9 +61,9 @@ class Game{
             
             for(let i=0; i<data.length; i++){
                 
+                
                 if(inputValue === data[i].id){
                     
-            
                     newScene.id = data[i].id;
                     newScene.name = data[i].name;
                     newScene.illustration = data[i].illustration;
@@ -81,7 +74,6 @@ class Game{
             }
             
             newScene.displayScene();
-        });
     }
     
     start(){
