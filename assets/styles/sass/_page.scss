@@ -1,4 +1,4 @@
-@media(min-width: 1224px) {
+@media screen and (min-width: 980px) {
     /* Styles pour cette Media Queries */
     body {
         display: grid;
@@ -34,13 +34,13 @@
                 background-color: #010c1b;
                 display: flex;
                 flex-direction: column;
-                align-items:center;
+                align-items: center;
                 color: $green;
                 font-weight: bolder;
                 border-radius: 10px;
                 border: solid 1px $green;
                 padding: 0 2vw;
-                text-align:center;
+                text-align: center;
 
                 & h2 {
                     font-size: 2rem;
@@ -54,6 +54,7 @@
                 & p {
                     font-size: 1.3rem;
                     line-height: 1.6rem;
+                    font-family: $textFont;
                 }
             }
 
@@ -99,6 +100,138 @@
 
             #img {
                 grid-column: 3/4;
+                background-color: #010c1b;
+                color: $green;
+                border: solid 1px $green;
+                border-radius: 10px;
+
+
+
+
+
+            }
+
+
+        }
+
+        &>footer {
+            background: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            grid-row: 3/4;
+            display: flex;
+            justify-content: center;
+            font-family: $titleFont;
+            font-size: 1.1rem;
+            font-weight: bold;
+            padding-top: 2vh;
+        }
+    }
+}
+
+@media screen and (max-width: 979px) {
+
+        body {
+        display: grid;
+        grid-template-rows: 15vh 100vh 5vh;
+
+
+        &>header {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(0deg, rgba(0, 0, 0, 1) 43%, rgba(13, 232, 19, 1) 46%, rgba(255, 255, 255, 1) 50%, rgba(8, 238, 8, 1) 53%, rgba(0, 0, 0, 1) 56%);
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            grid-row: 1/2;
+            display: flex;
+            justify-content: center;
+            font-family: $titleFont;
+            font-size: 1.6rem;
+            font-weight: bold;
+            padding-top: 2vh;
+        }
+
+        &>main {
+            grid-row: 2/3;
+            display: grid;
+            grid-template-rows: 30vh 30vh 30vh;
+            grid-row-gap: 2vw;
+            padding: 3vw;
+            background: url("https://cdnb.artstation.com/p/assets/images/images/012/137/523/large/tome-stefanovski-screenshot00003.jpg?1533220887");
+            background-size: cover;
+
+            #scene-name {
+                grid-row: 1/2;
+                background-color: #010c1b;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: $green;
+                font-weight: bolder;
+                border-radius: 10px;
+                border: solid 1px $green;
+                padding: 0 2vw;
+                text-align: center;
+
+                & h2 {
+                    font-size: 2rem;
+                    font-family: $titleFont;
+                    padding: 5vh 0;
+                    margin-bottom: 5vh;
+
+
+                }
+
+                & p {
+                    font-size: 1.3rem;
+                    line-height: 1.6rem;
+                    font-family: $textFont;
+                }
+            }
+
+            #scene-options {
+                grid-row: 2/3;
+                background-color: #010c1b;
+                font-family: $textFont;
+                display: grid;
+                align-items: center;
+                font-size: 1.5rem;
+                flex-direction: column;
+                border-radius: 10px;
+                border: solid 1px $green;
+                color: $green;
+                text-align: center;
+                padding: 1vw;
+                line-height: 2rem;
+
+                & #subBtn {
+                    width: 15vw;
+                    height: 7vh;
+                    margin-top: 5vh;
+                    border-right: 5px solid $green;
+                    border-left: 1px solid $green;
+                    border-top: 1px solid $green;
+                    border-bottom: 5px solid $darkerGreen;
+                    background-color: $lightGreen;
+                    font-size: 1.2rem;
+                    font-family: $titleFont;
+                    text-transform: uppercase;
+                    font-weight: 500;
+
+                    &:hover {
+                        width: 16vw;
+                        height: 8vh;
+                        color: $darkerGreen;
+                        margin-top: 4vh;
+                    }
+
+                }
+
+            }
+
+            #img {
+                grid-row: 3/4;
                 background-color: #010c1b;
                 color: $green;
                 border: solid 1px $green;
