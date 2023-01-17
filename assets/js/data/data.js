@@ -2,6 +2,7 @@ let data = [
     
     {
         id : 0,
+        name: "Scène 1",
         illustration : "un truc",
         situation : "blablabla",
         options : [

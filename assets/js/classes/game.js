@@ -40,6 +40,11 @@ class Game{
             newScene.options = data[i].options;
             
             console.log(newScene);
+            
+            if(newScene.id === 0){
+                
+                newScene.displayScene();
+            }
         }
     }
     

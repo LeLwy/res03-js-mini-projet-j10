@@ -62,35 +62,57 @@ class Scene{
         let sceneNameSituationSection = document.getElementById("scene-name");
         
         let sceneName = document.createElement("h2");
-        let sceneNameText = createTextNode(this.#name);
-        sceneNameTitle.appenChild(sceneNameText);
+        let sceneNameText = document.createTextNode(this.#name);
+        sceneName.appendChild(sceneNameText);
         
         let sceneSituation = document.createElement("p");
-        let sceneSituationText = createTextNode(this.#situation);
-        sceneSituation.appenChild(sceneSituationText);
+        let sceneSituationText = document.createTextNode(this.#situation);
+        sceneSituation.appendChild(sceneSituationText);
         
-        sceneNameSituationSection.appenChild(sceneName);
-        sceneNameSituationSection.appenChild(sceneSituation);
+        sceneNameSituationSection.appendChild(sceneName);
+        sceneNameSituationSection.appendChild(sceneSituation);
         
     }
     
     displayOptions(){
         
         let sceneOptionsSection = document.getElementById("scene-options");
+        let optionsForm = document.getElementById("options");
         
-        for(let i=0, i<this.#options.length, i++){
+        for(let i=0; i<this.#options.length; i++){
             
+            let optionInput = document.createElement("input");
+            let optionLabel = document.createElement("label");
+            let optionFieldset = document.createElement("fieldset");
             
+            optionInput.setAttribute("type", "radio");
+            optionInput.setAttribute("name", "choice");
+            
+            optionLabel.setAttribute("for", "choice");
+            let optionLabelText = document.createTextNode(this.#options[i].text)
+            optionLabel.appendChild(optionLabelText);
+            
+            optionFieldset.appendChild(optionLabel);
+            optionFieldset.appendChild(optionInput);
+            
+            optionsForm.appendChild(optionFieldset);
         }
     }
     
     displayIllustration(){
         
+        let sceneIllustrationImg = document.querySelector("#img > figure > img");
+        let illustrationSrc = document.createTextNode(this.#illustration);
+        console.log(illustrationSrc);
+        sceneIllustrationImg.setAttribute("src", illustrationSrc);
         
     }
     
     displayScene(){
         
+        this.displayNameSituation();
+        this.displayOptions();
+        this.displayIllustration();
         
     }
     
