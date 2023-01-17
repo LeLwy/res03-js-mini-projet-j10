@@ -1,15 +1,17 @@
 class Scene{
     
     #id;
+    #name;
     #illustration;
     #situation;
     #options;
     
-    constructor(id){
+    constructor(){
         
-        this.#id = id
-        this.#illustration = illustration;
-        this.#situation = situation;
+        this.#id;
+        this.#name = "";
+        this.#illustration = "";
+        this.#situation = "";
         this.#options = [];
     }
     
@@ -45,24 +47,54 @@ class Scene{
         this.#options = options;
     }
     
-    getOptions(){
+    get name (){
+        return this.#name;
+    }
+
+    set name (name){
+        this.#name = name;
+    }
+    
+    displayNameSituation(){
+        
+        /*Display sur la section name avec le nom de la scene et la situation*/
+        
+        let sceneNameSituationSection = document.getElementById("scene-name");
+        
+        let sceneName = document.createElement("h2");
+        let sceneNameText = createTextNode(this.#name);
+        sceneNameTitle.appenChild(sceneNameText);
+        
+        let sceneSituation = document.createElement("p");
+        let sceneSituationText = createTextNode(this.#situation);
+        sceneSituation.appenChild(sceneSituationText);
+        
+        sceneNameSituationSection.appenChild(sceneName);
+        sceneNameSituationSection.appenChild(sceneSituation);
+        
+    }
+    
+    displayOptions(){
+        
+        let sceneOptionsSection = document.getElementById("scene-options");
+        
+        for(let i=0, i<this.#options.length, i++){
+            
+            
+        }
+    }
+    
+    displayIllustration(){
         
         
     }
     
     displayScene(){
         
-    }
-    
-    displayIllustration(){
         
     }
     
-    displaySituation(){
-        
-    }
-    
-    displayOptions(){
+    redirection(scene){
         
     }
 }

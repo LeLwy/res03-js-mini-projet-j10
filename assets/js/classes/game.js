@@ -8,7 +8,7 @@ class Game{
     
     constructor(){
         
-        this.#character = character;
+        this.#character;
         this.#choices = [];
     }
     
@@ -32,15 +32,18 @@ class Game{
         
         for(let i=0; i<data.length; i++){
             
-            let newScene = new Scene;
+            let newScene = new Scene();
+            
+            newScene.id = data[i].id;
+            newScene.illustration = data[i].illustration;
+            newScene.situation = data[i].situation;
+            newScene.options = data[i].options;
+            
+            console.log(newScene);
         }
     }
     
     start(){
-        
-    }
-    
-    redirect(choice){
         
     }
     
