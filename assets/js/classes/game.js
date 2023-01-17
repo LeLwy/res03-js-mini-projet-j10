@@ -30,22 +30,58 @@ class Game{
     
     init(){
         
-        for(let i=0; i<data.length; i++){
+            
+        let startScene = new Scene();
+        
+        startScene.id = data[0].id;
+        startScene.name = data[0].name;
+        startScene.illustration = data[0].illustration;
+        startScene.situation = data[0].situation;
+        startScene.options = data[0].options;
+       
+        startScene.displayScene();
+        
+        this.redirection();
+
+    }
+    
+    redirection(){
+        
+        let sceneSubBtn = document.getElementById("subBtn");
+        
+        sceneSubBtn.addEventListener("click", function(e){
+            
+            e.preventDefault();
+            
+            let radioInputs = document.querySelectorAll("#choices > fieldset > input");
+            let inputValue; 
+            
+            for(let i=0; i<radioInputs.length; i++){
+                
+                if(radioInputs[i].checked){
+                    
+                    inputValue = radioInputs[i].getAttribute("destination");
+                }
+            }
             
             let newScene = new Scene();
             
-            newScene.id = data[i].id;
-            newScene.illustration = data[i].illustration;
-            newScene.situation = data[i].situation;
-            newScene.options = data[i].options;
-            
-            console.log(newScene);
-            
-            if(newScene.id === 0){
+            for(let i=0; i<data.length; i++){
                 
-                newScene.displayScene();
+                if(inputValue === data[i].id){
+                    
+            
+                    newScene.id = data[i].id;
+                    newScene.name = data[i].name;
+                    newScene.illustration = data[i].illustration;
+                    newScene.situation = data[i].situation;
+                    newScene.options = data[i].options;
+                    
+                }
             }
-        }
+            
+            newScene.displayScene();
+        });
     }
     
     start(){

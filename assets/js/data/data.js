@@ -9,35 +9,36 @@ let data = [
             {
                 id : 0,
                 text: "dfsghjk",
-                destination : {} // ou null si c'est une fin
+                destination : 1 // ou null si c'est une fin
             },
             {
                 id : 1,
                 text: "fdxgbn",
-                destination : {} // ou null si c'est une fin
+                destination : 2 // ou null si c'est une fin
             },
             {
                 id : 2,
                 text: "sdfwgxcvb",
-                destination : {} // ou null si c'est une fin
+                destination : 3 // ou null si c'est une fin
             },
         ]
     },
     
     {
         id : 1,
-        illustration : "",
-        situation : "",
+        name: "Scène 2",
+        illustration : "une chose",
+        situation : "bliblibli",
         options : [
             {
                 id : 0,
-                text: "",
-                destination : {} // ou null si c'est une fin
+                text: "trucmuche",
+                destination :  4// ou null si c'est une fin
             },
             {
                 id : 1,
-                text: "",
-                destination : {} // ou null si c'est une fin
+                text: "azerdtfyhgj",
+                destination : 5 // ou null si c'est une fin
             },
         ]
     },

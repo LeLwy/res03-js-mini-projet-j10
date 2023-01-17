@@ -9,9 +9,9 @@ class Scene{
     constructor(){
         
         this.#id;
-        this.#name = "";
-        this.#illustration = "";
-        this.#situation = "";
+        this.#name;
+        this.#illustration;
+        this.#situation;
         this.#options = [];
     }
     
@@ -77,7 +77,7 @@ class Scene{
     displayOptions(){
         
         let sceneOptionsSection = document.getElementById("scene-options");
-        let optionsForm = document.getElementById("options");
+        let optionsForm = document.getElementById("choices");
         
         for(let i=0; i<this.#options.length; i++){
             
@@ -87,6 +87,7 @@ class Scene{
             
             optionInput.setAttribute("type", "radio");
             optionInput.setAttribute("name", "choice");
+            optionInput.setAttribute("destination", this.#options[i].destination);
             
             optionLabel.setAttribute("for", "choice");
             let optionLabelText = document.createTextNode(this.#options[i].text)
@@ -97,6 +98,18 @@ class Scene{
             
             optionsForm.appendChild(optionFieldset);
         }
+        
+        let subBtnFieldset = document.createElement("fieldset");
+        let subBtn = document.createElement("input");
+        
+        let subBtnId = "subBtn";
+        subBtn.id = subBtnId;
+        subBtn.setAttribute("type", "submit");
+        subBtn.setAttribute("value", "J'y vais");
+        
+        subBtnFieldset.appendChild(subBtn);
+        optionsForm.appendChild(subBtnFieldset);
+        
     }
     
     displayIllustration(){
@@ -110,14 +123,22 @@ class Scene{
     
     displayScene(){
         
+        this.removeScene();
         this.displayNameSituation();
         this.displayOptions();
         this.displayIllustration();
         
     }
     
-    redirection(scene){
+    removeScene(){
         
+        let sceneNameSituationSection = document.getElementById("scene-name");
+        let optionsForm = document.getElementById("choices");
+        let sceneIllustrationImg = document.querySelector("#img > figure > img");
+        
+        sceneNameSituationSection.innerHTML = "";
+        optionsForm.innerHTML = "";
+        sceneIllustrationImg.innerHTML = "";
     }
 }
 
