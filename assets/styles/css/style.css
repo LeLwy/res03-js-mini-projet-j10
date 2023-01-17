@@ -112,7 +112,7 @@ table {
     font-size: 1.3rem;
     line-height: 1.6rem;
   }
-  body > main #situation {
+  body > main #scene-options {
     grid-column: 2/3;
     background-color: #010c1b;
     font-family: "Roboto Mono", monospace;
@@ -127,7 +127,7 @@ table {
     padding: 1vw;
     line-height: 2rem;
   }
-  body > main #situation #subBtn {
+  body > main #scene-options #subBtn {
     width: 15vw;
     height: 7vh;
     margin-top: 5vh;
@@ -141,7 +141,7 @@ table {
     text-transform: uppercase;
     font-weight: 500;
   }
-  body > main #situation #subBtn:hover {
+  body > main #scene-options #subBtn:hover {
     width: 16vw;
     height: 8vh;
     color: #143601;
