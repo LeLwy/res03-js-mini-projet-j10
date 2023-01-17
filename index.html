@@ -18,7 +18,7 @@
         <main>
             <section id="user-form" class="hidden">
                 <h2 class="sr-only">Choix du pseudo</h2>
-                <form id="user-nickname" >
+                <form id="user-nickname">
                     <fieldset>
                         <label for="firstname">Nom du personnage<span>*</span></label>
                         <input type="text" name="firstname" id="firstname" required />
@@ -26,41 +26,38 @@
                             <button type="submit" class="disabled" disabled>Start</button>
                         </fieldset>
                 </form>
-                </section>
-                <section id="scene-name">
-                    <h2>Exemple de scene</h2>
-                </section>
-                <section id="situation">
-                    <header>
-                    <h2 class="sr-only">la situation</h2>
-                    <p>
-                        blablablabla lorem ipsum blablabla je résume la situation
-                    </p>
-                    </header>
-                    <form id="choice">
-                        <h3>Trois choix s'offrent à toi :</h3>
-                        <fieldset id="c1">
-                            <label for="choice">Choix 1</label>
-                            <input type="radio" name="choice" />
-                        </fieldset>
-                        <fieldset id="c2">
-                            <label for="choice">Choix 2</label>
-                            <input type="radio" name="choice" />
-                        </fieldset>
-                        <fieldset id="c3">
-                            <label for="choice">choix3</label>
-                            <input type="radio" name="choice" />
-                        </fieldset>
-                        <fieldset>
-                            <input type="submit" value="Submit" />
-                        </fieldset>
-                    </form>
-                </section>
-                <section id="img">
-                    <figure>
-                        <img>
-                    </figure>
-                </section>
+            </section>
+            <section id="scene-name">
+                <h2 id="scene-title">Exemple de scene</h2>
+                <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+                    more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </section>
+            <section id="situation">
+                <h2 class="sr-only">la situation</h2>
+                <form id="choice">
+                    <fieldset id="c1">
+                        <label for="choice">Choix 1</label>
+                        <input type="radio" name="choice" />
+                    </fieldset>
+                    <fieldset id="c2">
+                        <label for="choice">Choix 2</label>
+                        <input type="radio" name="choice" />
+                    </fieldset>
+                    <fieldset id="c3">
+                        <label for="choice">Choix 3</label>
+                        <input type="radio" name="choice" />
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="Submit" id="subBtn" />
+                    </fieldset>
+                </form>
+            </section>
+            <section id="img">
+                <figure>
+                    <img>
+                </figure>
+            </section>
         </main>
         <footer>
             <p>Un projet de Louis, Julien et Valmont</p>

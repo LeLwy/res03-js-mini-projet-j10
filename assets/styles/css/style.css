@@ -83,8 +83,8 @@ table {
   body > main {
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 30vw 30vw 40vw;
-    grid-column-gap: 3vw;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-column-gap: 2vw;
     padding: 3vw;
     background: url("https://cdnb.artstation.com/p/assets/images/images/012/137/523/large/tome-stefanovski-screenshot00003.jpg?1533220887");
     background-size: cover;
@@ -92,15 +92,25 @@ table {
   body > main #scene-name {
     grid-column: 1/2;
     background-color: #010c1b;
-    font-size: 2rem;
-    font-family: "Orbitron", sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     color: #83f386;
     font-weight: bolder;
     border-radius: 10px;
     border: solid 1px #83f386;
+    padding: 0 2vw;
+    text-align: center;
+  }
+  body > main #scene-name h2 {
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+    padding: 5vh 0;
+    margin-bottom: 5vh;
+  }
+  body > main #scene-name p {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
   }
   body > main #situation {
     grid-column: 2/3;
@@ -114,6 +124,28 @@ table {
     border: solid 1px #83f386;
     color: #83f386;
     text-align: center;
+    padding: 1vw;
+    line-height: 2rem;
+  }
+  body > main #situation #subBtn {
+    width: 15vw;
+    height: 7vh;
+    margin-top: 5vh;
+    border-right: 5px solid #83f386;
+    border-left: 1px solid #83f386;
+    border-top: 1px solid #83f386;
+    border-bottom: 5px solid #143601;
+    background-color: #0fde0f;
+    font-size: 1.2rem;
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  body > main #situation #subBtn:hover {
+    width: 16vw;
+    height: 8vh;
+    color: #143601;
+    margin-top: 4vh;
   }
   body > main #img {
     grid-column: 3/4;
@@ -124,7 +156,6 @@ table {
   }
   body > footer {
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgb(0, 0, 0) 43%, rgb(13, 232, 19) 46%, rgb(255, 255, 255) 50%, rgb(8, 238, 8) 53%, rgb(0, 0, 0) 56%);
     color: white;
     text-align: center;
     text-transform: uppercase;
