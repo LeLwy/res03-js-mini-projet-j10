@@ -4,7 +4,7 @@ let data = [
         id : 0,
         name: "Crisis",
         illustration : "",
-        situation : "\"L'équipe scientifique aurait jamais dû ramener cette merde à bord ! Les marines coloniaux qui devaient récupérer le colis arrivent à peine que ce dernier s'est reproduit et à transformé la totalité de l'équipage en steack haché, en dehors de moi et de notre médecin en chef Leandro Ide (sûrement un italien). Je pourrais l'accompagner vers l'unité de cryosommeil où nous nous mettrions à l'abri dans un caisson ou accompagner le colonel Lagachet qui souhaite partir à la chasse aux bestioles. Sinon, je pourrais tenter ma chance seule vers les capsules à l'autre bout du vaisseau.\"",
+        situation : "\"L'équipe scientifique aurait jamais dû ramener cette merde à bord ! Les marines coloniaux qui devaient récupérer le colis arrivent à peine que ce dernier s'est reproduit et à transformé la totalité de l'équipage en steack haché, en dehors de moi et de notre médecin en chef Leandro Ide (sûrement un italien). Je pourrais l'accompagner vers l'unité de cryosommeil proche où nous nous mettrions à l'abri dans un caisson ou accompagner le colonel Lagachet qui souhaite partir à la chasse aux bestioles. Sinon, je pourrais tenter ma chance seule vers les capsules à l'autre bout du vaisseau.\"",
         options : [
             {
                 id : 0,
@@ -109,7 +109,7 @@ let data = [
         id : 5,
         name: "Heat",
         illustration : "",
-        situation : "\"Sur le sol du pont principal je trouve un lance-flamme, sûrement abandonné par un type de l'entretien sanitaire. C'est peut-être tros gros pour de simples rats, mais la créature que j'entends approcher a les dents un peu plus longues. Je parviens à la repousser, mais mes réserves de gaz s'épuisant, je dois prendre une décision. Trois couloirs que je peux fermer derrière moi sont à portée de course si j'abandonne prestemment mon arme de fortune. Le premier me ramènera vers la salle de contrôle, avec Lagachet, le second continu vers le module d'urgence et le troisième vers les cryocaissons. Que faire ?\"",
+        situation : "\"Sur le sol du pont principal je trouve un lance-flamme, sûrement abandonné par un type de l'entretien sanitaire. C'est peut-être tros gros pour de simples rats, seulement la créature que j'entends approcher a les dents un peu plus longues. Je parviens à la repousser, mais mes réserves de gaz s'épuisant, je dois prendre une décision. Trois couloirs que je peux fermer derrière moi sont à portée de course si j'abandonne prestemment mon arme de fortune. Le premier me ramènera vers la salle de contrôle, avec Lagachet, le second continu vers le module d'urgence et le troisième vers les cryocaissons. Que faire ?\"",
         options : [
             {
                 id : 0,
@@ -137,7 +137,7 @@ let data = [
         options : [
             {
                 id : 0,
-                text: "C'est pas ma guerre ... Fuir les créatures occupées à boulotter vos compagnons de fortune",
+                text: "\"C'est pas ma guerre ...\", fuir les créatures occupées à boulotter vos compagnons de fortune",
                 destination : 9 // ou null si c'est une fin
             },
             {
@@ -152,7 +152,7 @@ let data = [
         id : 7,
         name: "Maman malgré moi",
         illustration : "",
-        situation : "Vous ne parvenez pas à vous mesurer à l'androïde qui vous oblige à embrasser votre destin, ainsi que l'immonde bête rampante qui aura tôt fait de faire de vous la peu fière génitrice d'un nouveau monstre. Avant cela, Leandro Ide que vous pensiez au dessus de tout soupçon vous aura cryogénisé avant de vous envoyer à la compagnie Weyland, pour étudier la chose qui vous tuera en passant à travers votre cage thoracique.",
+        situation : "\"Vous ne parvenez pas à vous mesurer à l'androïde qui vous oblige à embrasser votre destin, ainsi que l'immonde bête rampante qui aura tôt fait de faire de vous la peu fière génitrice d'un nouveau monstre. Avant cela, Leandro Ide que vous pensiez au dessus de tout soupçon vous aura cryogénisé avant de vous envoyer à la compagnie Weyland, pour étudier la chose qui vous tuera en passant à travers votre cage thoracique.\"",
         options : [
             {
                 id : 0,
@@ -166,15 +166,10 @@ let data = [
         id : 8,
         name: "Je suis une légende",
         illustration : "",
-        situation : "",
+        situation : "\"Malgré votre résistance héroique, les monstres finissent par déchiqueter votre pauvre carcasse\"",
         options : [
             {
                 id : 0,
-                text: "",
-                destination : null // ou null si c'est une fin
-            },
-            {
-                id : 1,
                 text: "",
                 destination : null // ou null si c'est une fin
             },
@@ -183,55 +178,50 @@ let data = [
     
     {
         id : 9,
-        name: "Scène 10",
+        name: "Fat-bottomed Girl",
         illustration : "",
-        situation : "",
+        situation : "\"Merde ... c'est la salle de stockage du matériel \"sensible\", précisemment là d'où est partie l'infestation. La saloperie de trois mètres de haut qui me fait face doit être la génitrice des autres et elle a bien grandi depuis que les \"blouses blanches\" l'on ramenée à bord. Si je repars vers la salle de contrôle pour aider les marines et qu'on s'en sort, on arrivera peut-être à venir à bout de cette chose ... Seulement les capsules de secours sont dans la pièce à côté, avec un exosquelette de manutention dont je pourrais me servir pour bloquer la créature le temps d'initier les protocoles de lancement. Que faire ?\"",
         options : [
             {
                 id : 0,
-                text: "",
-                destination : null // ou null si c'est une fin
+                text: "\"On doit pouvoir s'en sortir tous ensemble\", rejoindre Lagachet et les marines",
+                destination : 8 // ou null si c'est une fin
             },
             {
                 id : 1,
-                text: "",
-                destination : null// ou null si c'est une fin
+                text: "\"C'est le moment de sprinter ma grande !\", semer brièvement la monstrueuse matriarche et mettre en place le face-à-face",
+                destination : 10 // ou null si c'est une fin
             },
         ]
     },
     
     {
         id : 10,
-        name: "Scène 11",
+        name: "Ne me touche pas sale p***",
         illustration : "",
-        situation : "",
+        situation : "\"Elle arrive ! J'ai à peine le temps de lancer les protocoles de lancement sur la console et de me glisser dans l'exosquelette que la bête me fait face. Grâce aux énormes pinces de mon armure de fortune, je parviens tant bien que mal à immobiliser mon adversaire contre une paroi du module. Ne me reste plus qu'à sauter et prendre mes jambes à mon coup jusqu'à la capsule. Cependant je suis en position de force, si je manipule assez rapidement ma bécane, je peux tordre le cou à cette saloperie avant qu'elle ne se dégage\"",
         options : [
             {
                 id : 0,
-                text: "",
-                destination : null // ou null si c'est une fin
+                text: "En finir une bonne fois pour toute avant de fuir",
+                destination : 11 // ou null si c'est une fin
             },
             {
                 id : 1,
-                text: "",
-                destination : null // ou null si c'est une fin
+                text: "\"Le mieux est l'ennemi du bien, que tout ce merdier devienne le problème de quelqu'un d'autre !\"",
+                destination : 12 // ou null si c'est une fin
             },
         ]
     },
     
     {
         id : 11,
-        name: "Scène 12",
+        name: "Elle connaissait le kung-fu ...",
         illustration : "",
-        situation : "",
+        situation : "Vous avez sous-estimé l'agilité du monstre auquel vous faisiez face et à peine la pression de l'une des pinces relâchée, vous vous retrouvez transpercée par le dard mortel situé au bout de la queue du monstre.",
         options : [
             {
                 id : 0,
-                text: "",
-                destination : null // ou null si c'est une fin
-            },
-            {
-                id : 1,
                 text: "",
                 destination : null // ou null si c'est une fin
             },
@@ -240,17 +230,12 @@ let data = [
     
     {
         id : 12,
-        name: "Scène 13",
+        name: "Sleeping Beauty",
         illustration : "",
-        situation : "",
+        situation : "Le temps de sauter dans la capsule et d'en allumer les réacteurs, vous vous retrouvez projetée à travers le vide spatial. Désormais à l'abri de ces créatures venues d'un autre monde, vous pouvez tranquillement initialiser le système de stase temporaire de votre vaisseau de fortune, en espérant que quelqu'un, quelque part captera votre signal avant que vous ne vous transformiez en glaçon interstellaire itinérant. Au moins pour le moment êtes vous sauf.",
         options : [
             {
                 id : 0,
-                text: "",
-                destination : null // ou null si c'est une fin
-            },
-            {
-                id : 1,
                 text: "",
                 destination : null // ou null si c'est une fin
             },
