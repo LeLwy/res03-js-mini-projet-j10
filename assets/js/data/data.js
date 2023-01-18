@@ -218,7 +218,7 @@ let data = [
         id : 11,
         name: "Elle connaissait le kung-fu ...",
         illustration : "",
-        situation : "Vous avez sous-estimé l'agilité du monstre auquel vous faisiez face et à peine la pression de l'une des pinces relâchée, vous vous retrouvez transpercée par le dard mortel situé au bout de la queue du monstre.",
+        situation : "Vous avez sous-estimé l'agilité du monstre auquel vous faisiez face et à peine la pression de l'une des pinces relâchée, vous vous retrouvez transpercée par le dard mortel situé au bout de sa queue.",
         options : [
             {
                 id : 0,
