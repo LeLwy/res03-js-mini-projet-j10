@@ -152,7 +152,7 @@ let data = [
         id : 7,
         name: "Maman malgré moi",
         illustration : "https://www.syfy.com/sites/syfy/files/styles/blog-post-embedded--mobile/public/2020/04/gettyimages-607392368.jpg",
-        situation : "\"Vous ne parvenez pas à vous mesurer à l'androïde. Ce dernier vous oblige à embrasser votre destin ainsi que la bête immonde qui aura tôt fait de faire de vous la peu fière génitrice d'un nouveau monstre. Avant cela, Leandro Ide que vous pensiez au dessus de tout soupçon vous aura cryogénisé avant de vous envoyer à la compagnie Weyland, pour étudier la chose qui vous tuera en passant à travers votre cage thoracique.\"",
+        situation : "\"Vous ne parvenez pas à vous mesurer à l'androïde qui vous oblige à embrasser la bête immonde et votre destin. Quand celle-ci vous aura fécondé, Leandro Ide ,que vous pensiez au dessus de tout soupçon, vous aura cryogénisé avant de vous envoyer à la compagnie Weyland pour étudier la chose qui vous tuera en passant à travers votre cage thoracique.\"",
         options : [
             {
                 id : 0,
