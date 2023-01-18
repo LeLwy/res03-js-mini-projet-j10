@@ -119,7 +119,7 @@ let data = [
             {
                 id : 1,
                 text: "Je dois suivre mon instinct",
-                destination : 10 // ou null si c'est une fin
+                destination : 9 // ou null si c'est une fin
             },
             {
                 id : 2,
