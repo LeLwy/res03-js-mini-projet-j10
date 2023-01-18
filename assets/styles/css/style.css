@@ -61,14 +61,14 @@ table {
 }
 
 @media screen and (min-width: 980px) {
-  /* Styles pour cette Media Queries */
   body {
     display: grid;
     grid-template-rows: 15vh 80vh 5vh;
+    background: url("https://cdnb.artstation.com/p/assets/images/images/012/137/523/large/tome-stefanovski-screenshot00003.jpg?1533220887");
+    background-size: cover;
   }
   body > header {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgb(0, 0, 0) 43%, rgb(13, 232, 19) 46%, rgb(255, 255, 255) 50%, rgb(8, 238, 8) 53%, rgb(0, 0, 0) 56%);
+    background: linear-gradient(0deg, rgba(130, 130, 152, 0.0592612045) 0%, rgba(23, 23, 64, 0.5718662465) 15%, rgba(0, 0, 0, 0.7259278711) 30%, rgb(0, 0, 0) 43%, rgb(13, 232, 19) 47%, rgb(255, 255, 255) 50%, rgb(8, 238, 8) 53%, rgb(0, 0, 0) 56%);
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -86,8 +86,6 @@ table {
     grid-template-columns: 30vw 30vw 30vw;
     grid-column-gap: 2vw;
     padding: 3vw;
-    background: url("https://cdnb.artstation.com/p/assets/images/images/012/137/523/large/tome-stefanovski-screenshot00003.jpg?1533220887");
-    background-size: cover;
   }
   body > main #scene-name {
     grid-column: 1/2;
@@ -128,6 +126,9 @@ table {
     padding: 1vw;
     line-height: 2rem;
   }
+  body > main #scene-options fieldset {
+    margin: 2vh 2vw 2vh 2vw;
+  }
   body > main #scene-options #subBtn {
     width: 15vw;
     height: 7vh;
@@ -154,6 +155,19 @@ table {
     color: #83f386;
     border: solid 1px #83f386;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    max-height: 100%;
+  }
+  body > main #img figure {
+    width: 100%;
+    height: 100%;
+  }
+  body > main #img figure img {
+    width: 100%;
+    height: 100%;
+    aspect-radio: 1/1;
+    border-radius: 10px;
   }
   body > footer {
     background: rgb(0, 0, 0);
@@ -169,14 +183,17 @@ table {
     padding-top: 2vh;
   }
 }
+
 @media screen and (max-width: 979px) {
   body {
     display: grid;
     grid-template-rows: 15vh 100vh 5vh;
+    background: url("https://cdnb.artstation.com/p/assets/images/images/012/137/523/large/tome-stefanovski-screenshot00003.jpg?1533220887");
+    background-size: cover;
   }
   body > header {
     background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgb(0, 0, 0) 43%, rgb(13, 232, 19) 46%, rgb(255, 255, 255) 50%, rgb(8, 238, 8) 53%, rgb(0, 0, 0) 56%);
+    background: linear-gradient(0deg, rgba(130, 130, 152, 0.0592612045) 0%, rgba(23, 23, 64, 0.5718662465) 15%, rgba(0, 0, 0, 0.7259278711) 30%, rgb(0, 0, 0) 43%, rgb(13, 232, 19) 47%, rgb(255, 255, 255) 50%, rgb(8, 238, 8) 53%, rgb(0, 0, 0) 56%);
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -194,8 +211,6 @@ table {
     grid-template-rows: 30vh 30vh 30vh;
     grid-row-gap: 2vw;
     padding: 3vw;
-    background: url("https://cdnb.artstation.com/p/assets/images/images/012/137/523/large/tome-stefanovski-screenshot00003.jpg?1533220887");
-    background-size: cover;
   }
   body > main #scene-name {
     grid-row: 1/2;
@@ -213,7 +228,7 @@ table {
   body > main #scene-name h2 {
     font-size: 2rem;
     font-family: "Orbitron", sans-serif;
-    padding: 5vh 0;
+    padding-top: 2vh;
     margin-bottom: 5vh;
   }
   body > main #scene-name p {
@@ -222,7 +237,7 @@ table {
     font-family: "Roboto Mono", monospace;
   }
   body > main #scene-options {
-    grid-row: 2/3;
+    grid-row: 3/4;
     background-color: #010c1b;
     font-family: "Roboto Mono", monospace;
     display: grid;
@@ -236,10 +251,13 @@ table {
     padding: 1vw;
     line-height: 2rem;
   }
+  body > main #scene-options fieldset {
+    margin: 1vh 2vw 2vh 2vw;
+  }
   body > main #scene-options #subBtn {
     width: 15vw;
     height: 7vh;
-    margin-top: 5vh;
+    margin-top: 2vh;
     border-right: 5px solid #83f386;
     border-left: 1px solid #83f386;
     border-top: 1px solid #83f386;
@@ -257,11 +275,18 @@ table {
     margin-top: 4vh;
   }
   body > main #img {
-    grid-row: 3/4;
+    grid-row: 2/3;
     background-color: #010c1b;
     color: #83f386;
     border: solid 1px #83f386;
     border-radius: 10px;
+  }
+  body > main #img figure {
+    width: 100%;
+    height: 100%;
+  }
+  body > main #img figure img {
+    width: 100%;
   }
   body > footer {
     background: rgb(0, 0, 0);
