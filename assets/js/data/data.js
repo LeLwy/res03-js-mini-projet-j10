@@ -109,7 +109,7 @@ let data = [
         id : 5,
         name: "Heat",
         illustration : "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/05/23/17/aliens-sigourney-weaver-.jpg?width=1200",
-        situation : "\"Sur le sol du pont principal je trouve un lance-flamme, sûrement abandonné par un type de l'entretien sanitaire. C'est peut-être tros gros pour de simples rats, seulement la créature que j'entends approcher a les dents un peu plus longues. Je parviens à la repousser, mais mes réserves de gaz s'épuisant, je dois prendre une décision. Trois couloirs que je peux fermer derrière moi sont à portée de course si j'abandonne prestemment mon arme de fortune. Le premier me ramènera vers la salle de contrôle, avec Lagachet, le second continue vers le module d'urgence et le troisième vers les cryocaissons. Que faire ?\"",
+        situation : "\"Sur le sol du pont principal je trouve un lance-flamme, sûrement abandonné par un type de l'entretien sanitaire. C'est peut-être trop gros pour de simples rats, seulement la créature que j'entends approcher a les dents un peu plus longues. Je parviens à la repousser, mais mes réserves de gaz s'épuisant, je dois prendre une décision. Trois couloirs que je peux fermer derrière moi sont à portée de course si j'abandonne prestemment mon arme de fortune. Le premier me ramènera vers la salle de contrôle, avec Lagachet, le second continue vers le module d'urgence et le troisième vers les cryocaissons. Que faire ?\"",
         options : [
             {
                 id : 0,
@@ -152,7 +152,7 @@ let data = [
         id : 7,
         name: "Maman malgré moi",
         illustration : "https://www.syfy.com/sites/syfy/files/styles/blog-post-embedded--mobile/public/2020/04/gettyimages-607392368.jpg",
-        situation : "\"Vous ne parvenez pas à vous mesurer à l'androïde qui vous oblige à embrasser votre destin, ainsi que l'immonde bête rampante qui aura tôt fait de faire de vous la peu fière génitrice d'un nouveau monstre. Avant cela, Leandro Ide que vous pensiez au dessus de tout soupçon vous aura cryogénisé avant de vous envoyer à la compagnie Weyland, pour étudier la chose qui vous tuera en passant à travers votre cage thoracique.\"",
+        situation : "\"Vous ne parvenez pas à vous mesurer à l'androïde. Ce dernier vous oblige à embrasser votre destin ainsi que la bête immonde qui aura tôt fait de faire de vous la peu fière génitrice d'un nouveau monstre. Avant cela, Leandro Ide que vous pensiez au dessus de tout soupçon vous aura cryogénisé avant de vous envoyer à la compagnie Weyland, pour étudier la chose qui vous tuera en passant à travers votre cage thoracique.\"",
         options : [
             {
                 id : 0,
