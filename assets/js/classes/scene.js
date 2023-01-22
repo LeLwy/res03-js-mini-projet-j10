@@ -106,9 +106,23 @@ class Scene{
         subBtn.id = subBtnId;
         subBtn.setAttribute("type", "submit");
         subBtn.setAttribute("value", "J'y vais");
+        subBtn.setAttribute("disabled", true);
         
         subBtnFieldset.appendChild(subBtn);
         optionsForm.appendChild(subBtnFieldset);
+        
+        sceneOptionsSection.addEventListener("change", function(){
+            
+            let inputs = document.querySelectorAll("#choices > fieldset > input")
+            
+            for(let i=0; i<inputs.length; i++){
+                
+                if(inputs[i].checked){
+                    
+                    subBtn.removeAttribute("disabled");
+                }
+            }
+        })
         
     }
     
