@@ -156,8 +156,8 @@ let data = [
         options : [
             {
                 id : 0,
-                text: "",
-                destination : null // ou null si c'est une fin
+                text: "Je retente ma chance !",
+                destination : 0 // ou null si c'est une fin
             },
         ]
     },
@@ -170,8 +170,8 @@ let data = [
         options : [
             {
                 id : 0,
-                text: "",
-                destination : null // ou null si c'est une fin
+                text: "Je retente ma chance !",
+                destination : 0 // ou null si c'est une fin
             },
         ]
     },
@@ -222,8 +222,8 @@ let data = [
         options : [
             {
                 id : 0,
-                text: "",
-                destination : null // ou null si c'est une fin
+                text: "Je retente ma chance !",
+                destination : 0 // ou null si c'est une fin
             },
         ]
     },
@@ -236,8 +236,8 @@ let data = [
         options : [
             {
                 id : 0,
-                text: "",
-                destination : null // ou null si c'est une fin
+                text: "Relancer le jeu",
+                destination : 0 // ou null si c'est une fin
             },
         ]
     },
